@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-28 14:43:16 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.join.entities.User" table="USER">
+        <id name="user_id" type="java.lang.Integer">
+            <column name="USER_ID" />
+            <generator class="native" />
+        </id>
+        <property name="user_name" type="java.lang.String">
+            <column name="USER_NAME" />
+        </property>
+        <property name="user_phone" type="java.lang.String">
+            <column name="USER_PHONE" />
+        </property>
+        <property name="user_pwd" type="java.lang.String">
+            <column name="USER_PWD" />
+        </property>
+        <many-to-one name="resume" class="com.join.entities.Resume" column="resume_id" cascade="save-update" unique="true" lazy="false" />
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,396 @@
+.nav1 {
+    height:30px;
+    background-color:#333;
+}
+.nav1 ul {
+    margin-left:20px;
+}
+.nav1 ul li {
+    float:left;
+    color:white;
+    margin-top:8px;
+    margin-left:10px;
+    font-size:12px;
+    cursor:pointer;
+}
+.nav1 ul li .fa-mobile {
+    margin-top:-6px;
+}
+.nav1 ul li .app {
+    color:white;
+}
+.nav1 ul li .app:hover {
+    color:green;
+}
+.nav1 ul li .admin {
+    color:white;
+}
+.nav1 ul li .admin:hover {
+    color:orange;
+}
+.nav2 {
+    height:60px;
+    background-color:#efefef;
+    border-bottom:3px solid #C9C5C5;
+}
+.nav2 .nav2-left {
+    width:350px;
+    height:60px;
+    float:left;
+}
+.nav2 .nav2-left ul li {
+    float:left;
+    margin-right:10px;
+}
+.nav2 .nav2-left ul li p {
+    font-size:20px;
+    font-weight:900;
+    color:black;
+    margin-top:22px;
+}
+.nav2 .nav2-left ul li img {
+    margin-left:100px;
+    margin-top:13px;
+}
+.nav2 .nav2-right ul li {
+    float:left;
+    font-size:20px;
+    margin-right:40px;
+    margin-top:18px;
+}
+.nav {
+  width:164px;
+  position:fixed;
+  top:200px;
+  left:50px;
+}
+.nav ul.navCon {
+  width:110px;
+  height:210px;
+  background:#943ec9;
+  margin:0 auto;
+}
+.nav ul li {
+  width:100%;
+  height:35px;
+  list-style-type:none;
+  color:#ddd;
+  font-size:14px;
+  font-family:"微软雅黑";
+  text-align:center;
+  line-height:35px;
+  cursor:pointer;
+}
+.nav ul li:hover {
+  color:#fff;
+}
+/*页面内容部分 B*/
+.container{
+  width: 1140px;
+  height: 1065px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.container .container_left{
+  width: 220px;
+  height: 500px;
+  float: left;
+  border-top: 3px solid #00B38A;
+  border-left: 1px solid #00B38A;
+  border-right: 1px solid #00B38A;
+  border-bottom: 1px solid #00B38A;
+}
+.container .container_left p{
+  font-size:25px;
+  font-weight:900;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container .container_left h4{
+  margin-left: 15px;
+}
+.container .container_left .star{
+  margin-left: 15px;
+}
+.container .container_left .star i{
+  font-size: 17px;
+  margin-right: 5px;
+}
+.container .container_left button{
+  width: 80px;
+  height: 30px;
+  border:1px solid #00B38A;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-top: 30px;
+  font-size:15px;
+}
+.container .container_left ul{
+  margin-top: 20px;
+
+}
+.container .container_left ul li{
+  width: 200px;
+  height: 50px;
+  margin-left: 15px;
+  font-size:15px;
+}
+.container .container_left ul li a:hover{
+  color:orange;
+}
+.container .container_left ul li i{
+  font-size:20px;
+  margin-right: 10px;
+}
+.container .container_right{
+  width: 900px;
+  height: 1065px;
+  float: right;
+
+}
+
+
+/*页面内容部分 E*/
+
+/*页面底部 */
+.footer {
+    width:100%;
+    height:120px;
+    float:left;
+    background-color:#A8ACB7;
+}
+.footer .footer_left {
+    width:60%;
+    height:150px;
+    float:left;
+    color:#434141;
+}
+.footer .footer_left p {
+    font-size:15px;
+    margin-left:150px;
+}
+.footer .footer_right {
+    width:40%;
+    height:150px;
+    float:left;
+    margin-top:50px;
+}
+.footer .footer_right p i {
+    font-size:3em;
+    color:#434141;
+    margin-left:50px;
+}
+.footer .footer_right ul li {
+    float:left;
+   
+    font-size:15px;
+    color:#434141;
+}
+
+
+
+
+/*登录注册*/
+
+/*登录部分 B*/
+.login {
+    width:500px;
+    height:400px;
+    background-color:#F7F7F7;
+    display:none;
+    position:fixed;
+    left:32%;
+    top:20%;
+    border-radius:20px;
+    opacity:0.93;
+    z-index:99;
+}
+.login .login_top {
+    height:44px;
+    background-color:#00B38A;
+    border-radius:20px;
+}
+.login .login_top a.close {
+    background:url(../images/close.png) no-repeat;
+    width:50px;
+    height:50px;
+    display:block;
+    position:absolute;
+    left:452px;
+    top:-4px;
+}
+.login .login_top span {
+    font-size:20px;
+    font-weight:900;
+    color:white;
+    margin-left:20px;
+    margin-top:10px;
+    line-height:42px;
+}
+.login .login_min {
+    height:360px;
+}
+.login .login_min .min_left {
+    width:230px;
+    height:360px;
+    float:left;
+}
+.login .login_min .min_left img {
+    width:150px;
+    height:150px;
+    margin-top:20px;
+    margin-left:40px;
+}
+.login .login_min .min_left h4 {
+    margin-top:25px;
+    margin-left:70px;
+}
+.login .login_min .min_left h5 {
+    margin-left:75px;
+}
+.login .login_min .min_right {
+    width:270px;
+    height:360px;
+    float:left;
+}
+.login .login_min .min_right a {
+    font-size:15px;
+    display:block;
+    margin-top:20px;
+    margin-left:165px;
+    text-decoration:none;
+    cursor:pointer;
+}
+.login .login_min .min_right input {
+    width:200px;
+    height:45px;
+    border-style:none;
+    border:1px solid gray;
+    border-radius:5px;
+    margin-top:20px;
+    font-size:15px;
+}
+.login .login_min .min_right .submit {
+    width:100px;
+    background-color:#00B38A;
+    font-size:20px;
+    color:white;
+}
+/*登录部分 E*/
+
+/*注册部分 B*/
+.register {
+    width:500px;
+    height:400px;
+    background-color:#F7F7F7;
+    display:none;
+    position:fixed;
+    left:32%;
+    top:20%;
+    border-radius:20px;
+    opacity:0.93;
+}
+.register .register_top {
+    height:44px;
+    background-color:#00B38A;
+    border-radius:20px;
+}
+.register .register_top a.close {
+    background:url(../images/close.png) no-repeat;
+    width:50px;
+    height:50px;
+    display:block;
+    position:absolute;
+    left:452px;
+    top:-4px;
+}
+.register .register_top span {
+    font-size:20px;
+    font-weight:900;
+    color:white;
+    margin-left:20px;
+    margin-top:10px;
+    line-height:42px;
+}
+.register .register_min {
+    height:360px;
+}
+.register .register_min .min_left {
+    width:245px;
+    height:360px;
+    float:left;
+    border-right:1px solid #DFDFDF;
+}
+.register .register_min .min_left input {
+    width:200px;
+    height:45px;
+    border-style:none;
+    border:1px solid gray;
+    border-radius:5px;
+    margin-top:20px;
+    font-size:10px;
+}
+.register .register_min .min_left .register {
+    width:100px;
+    background-color:#00B38A;
+    font-size:20px;
+    color:white;
+    margin-top:320px;
+    margin-left:120px;
+}
+.register .register_min .min_right {
+    width: 250px;
+    height: 360px;
+    float: left;
+}
+.register .register_min .min_right p{
+    margin-top: 30px;
+}
+.register .register_min .min_right a{
+    cursor:pointer;
+    text-decoration:none;
+}
+.register .register_min .min_right ul{
+    margin-top: 10px;
+}
+.register .register_min .min_right img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+.register .register_min .min_right .gologin{
+    font-weight:900;
+    color:black;
+    font-size: 15px;
+    margin-left: 50px;
+}
+/*注册部分 E*/
+
+/*编辑求职意向 B*/
+.expectAdd ul li{
+  float: left;
+  margin: 10px;
+  font-size:20px;
+}
+/*编辑求职意向 D*/
+
+/*编辑教育背景 B*/
+.educationalAdd ul li{
+  float: left;
+  margin: 10px;
+  font-size:20px;
+}
+/*编辑教育背景 E*/
+
+/*自我描述 B*/
+.descriptionAdd p{
+  margin: 10px;
+  font-size:20px;
+}
+/*自我描述 E*/
+/*作品 B*/
+.workAdd{
+  margin: 10px;
+  font-size:20px;
+} 
+/*作品 E*/ 

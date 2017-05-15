@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-9 20:57:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.join.entities.Retoneed" table="RETONEED">
+        <id name="tid" type="java.lang.Integer">
+            <column name="TID" />
+            <generator class="native" />
+        </id>
+        <property name="tneedid" type="java.lang.Integer">
+            <column name="TNEEDID" />
+        </property>
+        <property name="tcid" type="java.lang.Integer">
+            <column name="TCID" />
+        </property>
+        <property name="tusername" type="java.lang.String">
+            <column name="TUSERNAME" />
+        </property>
+        <property name="toffername" type="java.lang.String">
+            <column name="TOFFERNAME" />
+        </property>
+        <property name="tneedname" type="java.lang.String">
+            <column name="TNEEDNAME" />
+        </property>
+        <property name="tmoney" type="java.lang.String">
+            <column name="TMONEY" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="tcity" type="java.lang.String">
+            <column name="TCITY" />
+        </property>
+        <property name="tuserid" type="java.lang.Integer">
+        	<column name="tuserid"></column>
+        </property>
+    </class>
+</hibernate-mapping>

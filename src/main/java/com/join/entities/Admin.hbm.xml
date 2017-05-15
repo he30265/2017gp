@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-12 17:37:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.join.entities.Admin" table="ADMIN">
+        <id name="admin_id" type="java.lang.Integer">
+            <column name="ADMIN_ID" />
+            <generator class="native" />
+        </id>
+        <property name="admin_name" type="java.lang.String">
+            <column name="ADMIN_NAME" />
+        </property>
+        <property name="admin_pwd" type="java.lang.String">
+            <column name="ADMIN_PWD" />
+        </property>
+        <property name="admin_phone" type="java.lang.String">
+            <column name="ADMIN_PHONE" />
+        </property>
+    </class>
+</hibernate-mapping>

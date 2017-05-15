@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-28 14:46:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.join.entities.Resume" table="RESUME">
+        <id name="resume_id" type="java.lang.Integer">
+            <column name="RESUME_ID" />
+            <generator class="native" />
+        </id>
+        <property name="resume_name" type="java.lang.String">
+            <column name="RESUME_NAME" />
+        </property>
+        <property name="resume_image" type="java.lang.String">
+            <column name="RESUME_IMAGE" />
+        </property>
+        <property name="resume_address" type="java.lang.String">
+            <column name="RESUME_ADDRESS" />
+        </property>
+        <property name="resume_offeryear" type="java.lang.String">
+            <column name="RESUME_OFFERYEAR" />
+        </property>
+        <property name="resume_sex" type="java.lang.String">
+            <column name="RESUME_SEX" />
+        </property>
+        <property name="resume_status" type="java.lang.String">
+            <column name="RESUME_STATUS" />
+        </property>
+        <property name="resume_email" type="java.lang.String">
+            <column name="RESUME_EMAIL" />
+        </property>
+        <property name="resume_money" type="java.lang.String">
+            <column name="RESUME_MONEY" />
+        </property>
+        <property name="resume_wantadd" type="java.lang.String">
+            <column name="RESUME_WANTADD" />
+        </property>
+        <property name="resume_zhineng" type="java.lang.String">
+            <column name="RESUME_ZHINENG" />
+        </property>
+        <property name="resume_type" type="java.lang.String">
+            <column name="RESUME_TYPE" />
+        </property>
+        <property name="resume_finshtime" type="java.lang.String">
+            <column name="RESUME_FINSHTIME" />
+        </property>
+        <property name="resume_schoolname" type="java.lang.String">
+            <column name="RESUME_SCHOOLNAME" />
+        </property>
+        <property name="resume_zhuanye" type="java.lang.String">
+            <column name="RESUME_ZHUANYE" />
+        </property>
+        <property name="resume_xueli" type="java.lang.String">
+            <column name="RESUME_XUELI" />
+        </property>
+        <property name="resume_lianjie" type="java.lang.String">
+            <column name="RESUME_LIANJIE" />
+        </property>
+        <property name="resume_miaoshu" type="java.lang.String">
+            <column name="RESUME_MIAOSHU" />
+        </property>
+        <property name="resume_myself" type="java.lang.String">
+            <column name="RESUME_MYSELF" />
+        </property>
+        <property name="resume_oktime" type="java.lang.String">
+            <column name="RESUME_OKTIME" />
+        </property>
+        <property name="resume_alook" type="java.lang.String">
+            <column name="RESUME_ALOOK" />
+        </property>
+         <property name="resume_phone" type="java.lang.String">
+            <column name="RESUME_PHONE" />
+        </property>
+        <one-to-one name="user" class="com.join.entities.User" property-ref="resume" lazy="false" />
+    </class>
+</hibernate-mapping>

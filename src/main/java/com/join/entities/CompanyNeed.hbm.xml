@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-6 11:41:44 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.join.entities.CompanyNeed" table="COMPANYNEED">
+        <id name="need_id" type="java.lang.Integer">
+            <column name="NEED_ID" />
+            <generator class="native" />
+        </id>
+        <property name="need_name" type="java.lang.String">
+            <column name="NEED_NAME" />
+        </property>
+        <property name="need_city" type="java.lang.String">
+            <column name="NEED_CITY" />
+        </property>
+        <property name="need_money" type="java.lang.String">
+            <column name="NEED_MONEY" />
+        </property>
+        <property name="need_jingyan" type="java.lang.String">
+            <column name="NEED_JINGYAN" />
+        </property>
+        <property name="need_xueli" type="java.lang.String">
+            <column name="NEED_XUELI" />
+        </property>
+        <property name="need_youhuo" type="java.lang.String">
+            <column name="NEED_YOUHUO" />
+        </property>
+        <property name="need_miaoshu" type="java.lang.String">
+            <column name="NEED_MIAOSHU" />
+        </property>
+        <property name="need_xingzhi" type="java.lang.String">
+            <column name="NEED_XINGZHI" />
+        </property>
+        <property name="need_time" type="java.util.Date">
+            <column name="NEED_TIME" />
+        </property>
+        <property name="need_address" type="java.lang.String">
+            <column name="NEED_ADDRESS" />
+        </property>
+        <property name="need_comname" type="java.lang.String">
+            <column name="NEED_COMNAME" />
+        </property>
+        <property name="need_status" type="java.lang.Integer">
+        	<column name="NEED_STATUS" />
+        </property>
+        <many-to-one name="company" column="company_id" class="com.join.entities.Company" lazy="false"/>
+    </class>
+</hibernate-mapping>

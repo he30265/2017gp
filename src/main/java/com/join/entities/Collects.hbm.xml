@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-6 12:08:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.join.entities.Collects" table="COLLECTS">
+        <id name="collect_id" type="java.lang.Integer">
+            <column name="COLLECT_ID" />
+            <generator class="native" />
+        </id>
+        <property name="cneed_id" type="java.lang.Integer">
+            <column name="CNEED_ID" />
+        </property>
+        <property name="collect_name" type="java.lang.String">
+            <column name="COLLECT_NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

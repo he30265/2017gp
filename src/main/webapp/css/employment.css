@@ -1,0 +1,384 @@
+
+.nav1 {
+    height:30px;
+    background-color:#333;
+}
+.nav1 ul {
+    margin-left:20px;
+}
+.nav1 ul li {
+    float:left;
+    color:white;
+    margin-top:8px;
+    margin-left:10px;
+    font-size:12px;
+    cursor:pointer;
+}
+.nav1 ul li .fa-mobile {
+    margin-top:-6px;
+}
+.nav1 ul li .app {
+    color:white;
+}
+.nav1 ul li .app:hover {
+    color:green;
+}
+.nav1 ul li .admin {
+    color:white;
+}
+.nav1 ul li .admin:hover {
+    color:orange;
+}
+.nav2 {
+    height:60px;
+    background-color:#efefef;
+    border-bottom:3px solid #C9C5C5;
+}
+.nav2 .nav2-left {
+    width:350px;
+    height:60px;
+    float:left;
+}
+.nav2 .nav2-left ul li {
+    float:left;
+    margin-right:10px;
+}
+.nav2 .nav2-left ul li p {
+    font-size:20px;
+    font-weight:900;
+    color:black;
+    margin-top:22px;
+}
+.nav2 .nav2-left ul li img {
+    margin-left:100px;
+    margin-top:13px;
+}
+.nav2 .nav2-right ul li {
+    float:left;
+    font-size:20px;
+    margin-right:40px;
+    margin-top:18px;
+}
+.container {
+    width: 100%;
+    height:770px;
+    background-color: #fff;
+    position:relative;
+}
+.container .container_top{
+    height: 200px;
+    background-color: #EBF0EF;
+}
+.container_top_left{
+    height: 220px;
+    width: 600px;
+    margin-left: 80px;
+    float: left;
+}
+.container_top_left ul {
+    margin-top: 30px;
+}
+.container_top_left ul li{
+    margin-bottom: 13px;
+}
+.container_top_left ul li:nth-child(1){
+    font-size:15px;
+}
+.container_top_left ul li:nth-child(2){
+    font-size:35px;
+    font-weight: 900;
+}
+.container_top_left ul li:nth-child(3){
+    font-size:18px;
+}
+.container_top_left ul li:nth-child(5){
+    color:#999999;
+}
+.container_top_left ul li span{
+    background-color: white;
+    border:1px solid white;
+    margin-right: 5px;
+    border-radius:7px;
+    padding: 5px;
+}
+.container_top_right{
+    width: 350px;
+    height: 220px;
+    float: right;
+    margin-right: 100px;
+}
+.container_top_right span{
+    padding:15px;
+    margin-left: 20px;
+    margin-top: 80px;
+    display:inline-block;
+    font-size:15px;
+    border:1px solid #00B38A;
+    border-radius:8px;
+}
+.container .container_bottom{
+    height: 550px;
+    position: relative;
+}
+.container_bottom_left{
+    width: 740px;
+    height: 100%;
+    margin-left: 80px;
+    border-right: 3px solid #EBF0EF;
+    float: left;
+    background-color: #fff;
+}
+.container_bottom_left p{
+    font-size:17px;
+    font-weight:900;
+    color:black;
+    margin-top: 40px;
+}
+.container_bottom_left ul li{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.container_bottom_left span{
+    display:inline-block;
+    margin-top: 40px;
+    font-size:15px;
+}
+.container_bottom_right{
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    right: 106px;
+    background-color: #fff;
+}
+.container_bottom_right img{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 30px;
+    float: left;
+}
+.container_bottom_right span{
+    font-size: 18px;
+    display:inline-block;
+}
+.container_bottom_right ul{
+    margin-top: 40px;
+}
+.container_bottom_right ul li{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size:15px;
+    color:#B9B9B9;
+}
+.container_bottom_right ul i{
+    margin-right: 10px;
+}
+/*页面底部 */
+.footer {
+    width:100%;
+    height:185px;
+    float:left;
+    background-color:#A8ACB7;
+}
+.footer .footer_left {
+    width:60%;
+    height:150px;
+    float:left;
+    color:#434141;
+    margin-top:50px;
+}
+.footer .footer_left p {
+    font-size:15px;
+    margin-left:150px;
+}
+.footer .footer_right {
+    width:40%;
+    height:150px;
+    float:left;
+    margin-top:50px;
+}
+.footer .footer_right p i {
+    font-size:3em;
+    color:#434141;
+    margin-left:50px;
+}
+.footer .footer_right ul li {
+    float:left;
+    margin-top:30px;
+    font-size:15px;
+    color:#434141;
+}
+
+/*登录部分 B*/
+.login {
+    width:500px;
+    height:400px;
+    background-color:#F7F7F7;
+    display:none;
+    position:fixed;
+    left:32%;
+    top:20%;
+    border-radius:20px;
+    opacity:0.93;
+    z-index:99;
+}
+.login .login_top {
+    height:44px;
+    background-color:#00B38A;
+    border-radius:20px;
+}
+.login .login_top a.close {
+    background:url(../images/close.png) no-repeat;
+    width:50px;
+    height:50px;
+    display:block;
+    position:absolute;
+    left:452px;
+    top:-4px;
+}
+.login .login_top span {
+    font-size:20px;
+    font-weight:900;
+    color:white;
+    margin-left:20px;
+    margin-top:10px;
+    line-height:42px;
+}
+.login .login_min {
+    height:360px;
+}
+.login .login_min .min_left {
+    width:230px;
+    height:360px;
+    float:left;
+}
+.login .login_min .min_left img {
+    width:150px;
+    height:150px;
+    margin-top:20px;
+    margin-left:40px;
+}
+.login .login_min .min_left h4 {
+    margin-top:25px;
+    margin-left:70px;
+}
+.login .login_min .min_left h5 {
+    margin-left:75px;
+}
+.login .login_min .min_right {
+    width:270px;
+    height:360px;
+    float:left;
+}
+.login .login_min .min_right a {
+    font-size:15px;
+    display:block;
+    margin-top:20px;
+    margin-left:165px;
+    text-decoration:none;
+    cursor:pointer;
+}
+.login .login_min .min_right input {
+    width:200px;
+    height:45px;
+    border-style:none;
+    border:1px solid gray;
+    border-radius:5px;
+    margin-top:20px;
+    font-size:15px;
+}
+.login .login_min .min_right .submit {
+    width:100px;
+    background-color:#00B38A;
+    font-size:20px;
+    color:white;
+}
+/*登录部分 E*/
+
+/*注册部分 B*/
+.register {
+    width:500px;
+    height:400px;
+    background-color:#F7F7F7;
+    display:none;
+    position:fixed;
+    left:32%;
+    top:20%;
+    border-radius:20px;
+    opacity:0.93;
+}
+.register .register_top {
+    height:44px;
+    background-color:#00B38A;
+    border-radius:20px;
+}
+.register .register_top a.close {
+    background:url(../images/close.png) no-repeat;
+    width:50px;
+    height:50px;
+    display:block;
+    position:absolute;
+    left:452px;
+    top:-4px;
+}
+.register .register_top span {
+    font-size:20px;
+    font-weight:900;
+    color:white;
+    margin-left:20px;
+    margin-top:10px;
+    line-height:42px;
+}
+.register .register_min {
+    height:360px;
+}
+.register .register_min .min_left {
+    width:245px;
+    height:360px;
+    float:left;
+    border-right:1px solid #DFDFDF;
+}
+.register .register_min .min_left input {
+    width:200px;
+    height:45px;
+    border-style:none;
+    border:1px solid gray;
+    border-radius:5px;
+    margin-top:20px;
+    font-size:10px;
+}
+.register .register_min .min_left .register {
+    width:100px;
+    background-color:#00B38A;
+    font-size:20px;
+    color:white;
+    margin-top:320px;
+    margin-left:120px;
+}
+.register .register_min .min_right {
+    width: 250px;
+    height: 360px;
+    float: left;
+}
+.register .register_min .min_right p{
+    margin-top: 30px;
+}
+.register .register_min .min_right a{
+    cursor:pointer;
+    text-decoration:none;
+}
+.register .register_min .min_right ul{
+    margin-top: 10px;
+}
+.register .register_min .min_right img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+.register .register_min .min_right .gologin{
+    font-weight:900;
+    color:black;
+    font-size: 15px;
+    margin-left: 50px;
+}
+/*注册部分 E*/

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!--关闭动态方法调用，不能直接访问类 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<!--定义开发模式，有错误会打印出来 -->
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="user*" class="com.join.action.UserAction" method="user{1}">
+			<result name="index">index.jsp</result>
+			<result name="loginerror">login.jsp</result>
+			<result name="regsuccess">login.jsp</result>
+		</action>
+		<action name="lookmyiresume" class="com.join.action.UserAction"
+			method="lookmyiresume">
+			<result name="success">iresume.jsp</result>
+		</action>
+		<action name="editresume*" class="com.join.action.UserAction"
+			method="editresume{1}">
+			<result name="success">iresume.jsp</result>
+		</action>
+		<action name="complayReg" class="com.join.action.ComplayAction"
+			method="complayReg">
+			<result name="success">companyLogin.jsp</result>
+		</action>
+		<action name="sendemail" class="com.join.action.ComplayAction"
+			method="sendemail"></action>
+		<action name="complayLogin" class="com.join.action.ComplayAction"
+			method="complayLogin">
+			<result name="success">companyhome.jsp</result>
+			<result name="comerror">companyLogin.jsp</result>
+			<result name="wansahnxinxi">companyInfo.jsp</result>
+		</action>
+		<action name="lookeditoffer" class="com.join.action.ComplayAction"
+			method="lookeditoffer">
+			<result name="editsuccess">editoffer.jsp</result>
+		</action>
+		<action name="editoffer" class="com.join.action.ComplayAction"
+			method="editoffer">
+			<result name="success">manageJob.jsp</result>
+		</action>
+		<action name="editMyInfo" class="com.join.action.ComplayAction"
+			method="editMyInfo">
+			<result name="success">companyhome.jsp</result>
+		</action>
+		<action name="savezhiwei" class="com.join.action.ComplayAction"
+			method="savezhiwei">
+			<result name="success">companyhome.jsp</result>
+		</action>
+		<action name="lookalloffer" class="com.join.action.UserAction"
+			method="lookalloffer">
+		</action>
+		<action name="manageResume" class="com.join.action.ComplayAction"
+			method="manageResume">
+			<result name="success">manageResume.jsp</result>
+		</action>
+		<action name="changepwd" class="com.join.action.UserAction"
+			method="changepwd">
+			<result name="success">login.jsp</result>
+		</action>
+		<action name="downoffer" class="com.join.action.ComplayAction"
+			method="downoffer">
+			<result name="success">manageJob.jsp</result>
+		</action>
+		<action name="deleteoffer" class="com.join.action.ComplayAction"
+			method="deleteoffer">
+			<result name="success">manageJob.jsp</result>
+		</action>
+		<action name="delivery" class="com.join.action.UserAction"
+			method="delivery">
+			<result name="success">delivery.jsp</result>
+		</action>
+		<action name="lookZixi" class="com.join.action.ComplayAction"
+			method="lookZixi">
+			<result name="success">employment.jsp</result>
+		</action>
+		<action name="telltoface" class="com.join.action.ComplayAction"
+			method="telltoface"></action>
+		<action name="irefuse" class="com.join.action.ComplayAction"
+			method="irefuse"></action>
+		<action name="deleteresume" class="com.join.action.ComplayAction"
+			method="deleteresume"></action>
+		<action name="changecompwd" class="com.join.action.ComplayAction"
+			method="changecompwd">
+			<result name="success">companyLogin.jsp</result>
+		</action>
+		<action name="addCollect" class="com.join.action.UserAction"
+			method="addCollect"></action>
+		<action name="delCollect" class="com.join.action.UserAction"
+			method="delCollect"></action>
+		<action name="savatoudi" class="com.join.action.UserAction"
+			method="savatoudi"></action>
+			<action name="checkphone" class="com.join.action.ComplayAction" method="checkphone">
+			</action>
+			<action name="adminlayout" class="com.join.action.AdminAction" method="adminlayout">
+				<result name="success">adminLogin.jsp</result>
+			</action>
+		<action name="lookmycollects" class="com.join.action.UserAction"
+			method="lookmycollects">
+			<result name="success">collections.jsp</result>
+		</action>
+		<action name="searchoffer" class="com.join.action.UserAction"
+			method="searchoffer">
+			<result name="success">search.jsp</result>
+		</action>
+		<action name="companylout" class="com.join.action.ComplayAction" method="companylout">
+			<result name="success">index.jsp</result>
+		</action>
+		<!--管理员部分  -->
+		<action name="adminlogin" class="com.join.action.AdminAction" method="adminlogin">
+			<result name="success">admin.jsp</result>
+			<result name="input">adminLogin.jsp</result>
+		</action>
+		<action name="updatenotice" class="com.join.action.AdminAction" method="updatenotice">
+			<result name="success">admin.jsp</result>
+		</action>
+		<action name="adminlogout" class="com.join.action.AdminAction" method="adminlogout">
+			<result name="success">adminLogin.jsp</result>
+		</action>
+		<action name="deleteuser" class="com.join.action.AdminAction" method="deleteuser"></action>
+		<action name="deletecompany" class="com.join.action.AdminAction" method="deletecompany"></action>
+	</package>
+</struts>
